@@ -1,13 +1,13 @@
-
-
+import { BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Rutas from './router/index.routes';
 
 function App() {
   
-
   return (
-    <>
-        desde app
-    </>
+    <BrowserRouter>
+      <Rutas/>
+    </BrowserRouter>
   )
 }
 
