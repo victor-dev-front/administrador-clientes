@@ -1,0 +1,19 @@
+//estilos globales
+html {
+    box-sizing: border-box;
+    //10px === 1rem
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+  img{
+      max-width: 100%;
+      display: block;
+  }
+
+  body{
+      font-family: $fuentePrincipal;
+  }

@@ -1,0 +1,37 @@
+
+.titulo{
+    color: $blanco;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.navbar{
+    background-color: $colorPrimario;
+}
+.navbarToggle{
+   background-color: $gris;
+   border: .1px  $gris solid;
+}
+.link{
+    color: $blanco;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: $fuentePrincipal;
+
+    &:hover{
+        color: $gris;
+    }
+
+    &:nth-of-type(1){
+        margin-top: 1.5rem;
+    }
+
+    &:last-of-type{
+        margin-bottom: 1.5rem;
+    }
+}
+
+.activo{
+    color: $grisOscuro;
+}

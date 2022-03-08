@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import { Cliente, Clientes, EditarCliente, Layout, NuevoCliente } from '../pages';
+import Layout from '../layout/Layout';
+import { Cliente, Clientes, EditarCliente, NuevoCliente } from '../pages';
 
 const Rutas = () => {
     return ( 

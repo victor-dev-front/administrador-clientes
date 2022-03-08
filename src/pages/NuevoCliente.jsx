@@ -1,6 +1,12 @@
+import Formulario from "../components/formulario/Formulario";
 
 const NuevoCliente = () => {
-    return ( <h1>NuevoCliente</h1> );
+    return ( 
+        <>
+          <h2 className="subTitulo">Nuevo Cliente</h2>
+          <Formulario/>
+        </>
+     );
 }
  
 export default NuevoCliente;
