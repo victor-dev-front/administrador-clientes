@@ -9,7 +9,8 @@ const Rutas = () => {
                <Route path='clientes' element={<Clientes />}/>  
                <Route path='nuevo' element={<NuevoCliente />}/> 
                <Route path='editar/:id' element={<EditarCliente />}/>
-               <Route path='Cliente' element={<Cliente />}/>
+               <Route path='cliente/:id' element={<Cliente />}/>
+               <Route path="*" element={<Clientes />} />
             </Route>
         </Routes>
      );

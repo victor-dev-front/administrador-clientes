@@ -1,12 +1,16 @@
 import { BrowserRouter } from 'react-router-dom';
+import DatasApiProvider from './context/DatasApiContext';
 import Rutas from './router/index.routes';
 
 function App() {
+
   
   return (
-    <BrowserRouter>
-      <Rutas/>
-    </BrowserRouter>
+    <DatasApiProvider>
+        <BrowserRouter>
+           <Rutas/>
+        </BrowserRouter>
+    </DatasApiProvider>
   )
 }
 

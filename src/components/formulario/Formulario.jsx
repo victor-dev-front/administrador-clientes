@@ -1,7 +1,11 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { postApi } from "../../services/enviarDatosCliente";
+import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 
-const Formulario = () => {
+const Formulario = ({cliente}) => {
+
+  const navigate = useNavigate();
 
   const nuevoClienteSchema = Yup.object().shape({
     nombre: Yup.string()
@@ -29,20 +33,24 @@ const Formulario = () => {
 
             //valores iniciales de mi obejto
             initialValues={{
-              nombre:"",
-              empresa:"",
-              email:"",
-              telefono:"",
-              notas:""
+              nombre: cliente?.nombre??"",
+              empresa:cliente?.empresa??"",
+              email:cliente?.email??"",
+              telefono:cliente?.telefono??"",
+              notas:cliente?.notas??""
             }}
 
             //shema de YUP
             validationSchema={nuevoClienteSchema}
+
+            //para la parte de editar usuario
+            enableReinitialize={true}
             
             //envio el formulario
             onSubmit={(values,{resetForm})=>{
+              postApi(values,cliente);
               resetForm();
-              console.log(values);
+              navigate("/clientes");
             }}
           >
             {({errors})=>(
@@ -110,5 +118,10 @@ const Formulario = () => {
         </div>
      );
 }
+
+// Especifica los valores por defecto de props:
+Formulario.defaultProps = {
+  cliente: {}
+};
  
 export default Formulario;

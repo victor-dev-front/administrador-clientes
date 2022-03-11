@@ -1,0 +1,45 @@
+.tituloCliente{
+    font-size: 2rem;
+    font-weight: 900;
+    color: $colorSegundario;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tituloCliente span{
+    font-size: 1.7rem;
+    color: $grisOscuro;
+    padding-left: 1rem;
+}
+
+.parrafoCliente{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $colorSegundario;
+    text-transform: capitalize;
+}
+
+.infoCliente p{
+    color: $colorSegundario;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.infoCliente p span{
+    font-size: 1.6rem;
+    color: $grisOscuro;
+    padding-left: 1rem;
+}
+
+.contenedorBTN{
+    display: flex;
+    justify-content: center;
+}
+
+.volverBTN{
+    width: 40%;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}

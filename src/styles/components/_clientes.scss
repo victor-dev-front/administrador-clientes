@@ -1,0 +1,64 @@
+.tituloClientes{
+    font-size: 2rem;
+    font-weight: 900;
+    color: $colorSegundario;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.parrafoClientes{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $colorSegundario;
+    text-transform: capitalize;
+}
+
+.clientes{
+    background-color: $colorSegundario;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.clientes h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: $blanco;
+    padding: .6rem .5rem;
+    height: 3rem;
+}
+
+.datosClientes{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   border-bottom: .2rem $colorSegundario solid;
+   align-items: center;
+
+   &:hover{
+       background-color: $gris;
+   }
+}
+
+.datosClientes p{
+    text-align: start;
+    padding: .6rem .5rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: $colorSegundario;
+    margin: 0;
+    border-right: .2rem $colorSegundario solid;
+
+    &:last-of-type{
+      border-right: none;  
+    }
+}
+
+//botones
+
+.btn{
+    width: 100%;
+    margin: .5rem 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+}

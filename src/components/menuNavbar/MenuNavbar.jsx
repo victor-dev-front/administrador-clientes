@@ -5,8 +5,6 @@ const MenuNavbar = () => {
 
     const location = useLocation();
     const urlActual = location.pathname;
-    console.log(urlActual);
-
 
     return ( 
         <Navbar className='navbar' expand="lg" variant='dark'>
