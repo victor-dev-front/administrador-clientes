@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const MenuNavbar = () => {
 
@@ -13,8 +13,8 @@ const MenuNavbar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className='navbarToggle'/>
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Link className={`${urlActual === "/clientes" ? "link activo": "link"}`} to={"/clientes"}>Clientes</Link>
-                    <Link className={`${urlActual === "/nuevo" ? "link activo": "link"}`} to={"/nuevo"}>Nuevo Cliente</Link>
+                    <NavLink className={(navData) => navData.isActive ? "activo" : "link" } to={"/clientes"}>Clientes</NavLink>
+                    <NavLink className={(navData) => navData.isActive ? "activo" : "link" } to={"/nuevo"}>Nuevo Cliente</NavLink>
                 </Nav>
                 </Navbar.Collapse>
             </Container>

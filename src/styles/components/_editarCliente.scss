@@ -1,0 +1,34 @@
+.tituloEditar{
+   @include titulo;
+}
+
+.tituloEditar span{
+    font-size: 1.7rem;
+    color: $grisOscuro;
+    padding-left: 1rem;
+}
+
+.parrafoEditar{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $colorSegundario;
+    text-transform: capitalize;
+}
+
+@include tel {
+    .tituloEditar{
+        @include titulo;
+        margin-top: 2rem;
+        font-size: 2.7rem;
+    }
+
+    .tituloEditar span{
+        font-size: 2rem;
+       
+    }
+
+    .parrafoEditar{
+        font-size: 1.8rem;
+        margin: 2rem 0 2rem 10%;
+    }
+}

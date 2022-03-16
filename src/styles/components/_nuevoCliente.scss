@@ -1,8 +1,9 @@
 .subTitulo{
-    font-size: 2rem;
-    font-weight: 900;
-    color: $colorSegundario;
-    padding: 2rem 0;
-    text-transform: uppercase;
-    text-align: center;
+    @include titulo{
+        padding: 2rem 0;
+    }
+
+    @include tel{
+        
+    }
 }

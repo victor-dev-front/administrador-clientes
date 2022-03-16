@@ -1,3 +1,20 @@
 {
-  "clientes": []
+  "clientes": [
+    {
+      "nombre": "victor",
+      "empresa": "vivero",
+      "email": "vgarcia164@alumnos.iua.edu.ar",
+      "telefono": "3513965599",
+      "notas": "pagar plantas",
+      "id": 1
+    },
+    {
+      "nombre": "sabrina",
+      "empresa": "marketing",
+      "email": "sabrina@gmail.com",
+      "telefono": "3511465545",
+      "notas": "verificar",
+      "id": 2
+    }
+  ]
 }

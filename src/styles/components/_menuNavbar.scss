@@ -1,6 +1,6 @@
 
 .titulo{
-    color: $blanco;
+    color: $colorSegundario;
     font-size: 2.5rem;
     font-weight: 900;
 }
@@ -14,24 +14,28 @@
 }
 .link{
     color: $blanco;
-    text-decoration: none;
-    font-size: 1.7rem;
-    font-weight: 700;
-    font-family: $fuentePrincipal;
-
-    &:hover{
-        color: $gris;
-    }
-
-    &:nth-of-type(1){
-        margin-top: 1.5rem;
-    }
-
-    &:last-of-type{
-        margin-bottom: 1.5rem;
-    }
+    @include navbar;
 }
 
 .activo{
-    color: $grisOscuro;
+    color: $colorSegundario;
+    @include navbar;
+}
+
+@include tel {
+    .titulo{
+        font-size: 2.8rem;
+        padding: 1.7rem 0;
+    }
+
+    .link{
+        @include navbar;
+        font-size: 2.3rem;
+    }
+
+    .activo{
+        @include navbar;
+        font-size: 2.3rem;
+    }
+
 }

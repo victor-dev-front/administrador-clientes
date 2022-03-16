@@ -17,8 +17,8 @@ const EditarCliente = () => {
 
     return ( 
     <>
-         <h2 className="subTitulo">Cliente: <span>{cliente.nombre}</span></h2>
-         <p className="parrafoCliente">Editar Informacion del Cliente</p>
+         <h2 className="tituloEditar">Cliente: <span>{cliente.nombre}</span></h2>
+         <p className="parrafoEditar">Editar Informacion del Cliente</p>
          <Formulario cliente={cliente}/>  
 
     </> 

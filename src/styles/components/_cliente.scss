@@ -1,16 +1,12 @@
 .tituloCliente{
-    font-size: 2rem;
-    font-weight: 900;
-    color: $colorSegundario;
-    margin: 1rem 0;
-    text-transform: uppercase;
-    text-align: center;
+    @include titulo;
 }
 
 .tituloCliente span{
     font-size: 1.7rem;
     color: $grisOscuro;
     padding-left: 1rem;
+    font-weight: 900;
 }
 
 .parrafoCliente{
@@ -42,4 +38,33 @@
     width: 40%;
     font-size: 1.5rem;
     margin-top: 2rem;
+}
+
+@include tel{
+    .tituloCliente{
+        @include titulo;
+        font-size: 2.7rem;
+        margin-top: 2rem;
+    }
+
+    .tituloCliente span{
+        font-size: 2rem;
+    }
+
+    .parrafoCliente{
+        font-size: 1.8rem;
+    }
+    .infoCliente p{
+        font-size: 1.9rem;
+    }
+
+    .infoCliente p span{
+        font-size: 1.9rem;
+    }
+
+    .volverBTN{
+        font-size: 1.8rem;
+    }
+
+
 }

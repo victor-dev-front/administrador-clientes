@@ -9,6 +9,7 @@
     -webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.61);
     -moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.61);
     box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.61);
+
 }
 
 .titleForm{
@@ -17,6 +18,7 @@
     font-weight: 900;
     color: $colorSegundario;
     margin: 2rem 0;
+
 }
 
 .camposForm{
@@ -79,4 +81,33 @@
     color: $colorPrimario;
     font-size: 1.3rem;
     font-weight: 900;
+}
+
+@include tel{
+    .contenedor__titleForm{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .titleForm{
+        font-size: 1.9rem;  
+    }
+
+    .camposForm label{
+        font-size: 1.7rem;
+    }
+
+    .camposForm input{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+
+    .btnForm{
+        height: 3.2rem;
+        font-size: 2rem;
+    }
+
+    .alerta{
+        font-size: 1.5rem;
+    }
 }
