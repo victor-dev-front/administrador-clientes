@@ -48,7 +48,6 @@ const Clientes = () => {
                             }else{
                               setEstado(true);
                             }
-                            console.log(estado);
                             return eliminarCliente(cliente.id);
                           }
                           } 

@@ -27,5 +27,4 @@ const DatasApiProvider = (props) => {
     )
 
 }
-
 export default DatasApiProvider;

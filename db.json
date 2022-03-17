@@ -1,11 +1,11 @@
 {
   "clientes": [
     {
-      "nombre": "victor",
-      "empresa": "vivero",
-      "email": "victorfunk_garcia@hotmail.com",
+      "nombre": "tequila",
+      "empresa": "marketing",
+      "email": "vgarcia164@alumnos.iua.edu.ar",
       "telefono": "3513965599",
-      "notas": "",
+      "notas": "pagar",
       "id": 1
     }
   ]

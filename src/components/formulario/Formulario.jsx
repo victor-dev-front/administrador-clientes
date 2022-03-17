@@ -27,6 +27,7 @@ const Formulario = ({cliente}) => {
                  .positive("Numero no Valido")
                  .required("El Numero del Cliente es Obligatorio"),
     notas: Yup.string()
+              .required("La Nota es Obligatorio")
        
   });
 
@@ -58,7 +59,6 @@ const Formulario = ({cliente}) => {
               }else{
                 setEstado(true);
               }
-              console.log(estado);
               resetForm();
               navigate("/clientes");
             }}
