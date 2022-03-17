@@ -18,9 +18,8 @@ const Cliente = () => {
     const {nombre, empresa, telefono, notas, email} = cliente;
 
 
-    return ( 
-      
-        <>
+    return (  
+        <div className="contenedorCliente">
             <h2 className="tituloCliente">Cliente  :<span>{nombre}</span></h2>
             <p className="parrafoCliente">Informacion del Cliente</p>
 
@@ -29,7 +28,7 @@ const Cliente = () => {
                 <p>EMAIL:<span>{email}</span></p>
                 <p>TELÉFONO:<span>{telefono}</span></p>
                 <p>EMPRESA:<span>{empresa}</span></p>
-                <p>NOTAS:<span>{notas}</span></p>
+                {notas ? <p>NOTAS:<span>{notas}</span></p> : null}
             </div>
             <div className="contenedorBTN">
                 <Button 
@@ -40,7 +39,7 @@ const Cliente = () => {
                 Volver
                 </Button>
             </div>
-       </> 
+       </div> 
      );
 }
  

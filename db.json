@@ -3,18 +3,10 @@
     {
       "nombre": "victor",
       "empresa": "vivero",
-      "email": "vgarcia164@alumnos.iua.edu.ar",
+      "email": "victorfunk_garcia@hotmail.com",
       "telefono": "3513965599",
-      "notas": "pagar plantas",
+      "notas": "",
       "id": 1
-    },
-    {
-      "nombre": "sabrina",
-      "empresa": "marketing",
-      "email": "sabrina@gmail.com",
-      "telefono": "3511465545",
-      "notas": "verificar",
-      "id": 2
     }
   ]
 }

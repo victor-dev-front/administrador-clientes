@@ -111,3 +111,36 @@
         font-size: 1.5rem;
     }
 }
+
+@include desktop {
+    .contenedor__titleForm{
+        width: 40%;
+    }
+
+    .titleForm{
+        font-size: 2.2rem;  
+    }
+
+    .camposForm label{
+        font-size: 2rem;
+    }
+
+    .camposForm input{
+        height: 3.3rem;
+        font-size: 1.6rem;
+    }
+
+    .btnForm{
+        height: 3.2rem;
+        font-size: 2rem;
+        width: 30%;
+    }
+
+    .alerta{
+        font-size: 1.5rem;
+    }
+
+    .camposForm textarea{ 
+       font-size: 1.6rem;   
+    }
+}

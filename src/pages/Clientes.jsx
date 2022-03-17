@@ -6,11 +6,10 @@ import { eliminarCliente } from "../services/eliminarCliente";
 
 const Clientes = () => {
 
-    const {clientes}= useContext(DatasApiContext);
+    const {clientes,setEstado,estado}= useContext(DatasApiContext);
 
     //ver cliente
     const navigate = useNavigate();
-
      
     return ( 
         <>
@@ -42,7 +41,17 @@ const Clientes = () => {
                          Editar</Button>
                        <Button 
                           variant="danger"
-                          onClick={()=> eliminarCliente(cliente.id)}
+                          onClick={()=> {
+
+                            if(estado == true){
+                              setEstado(false)
+                            }else{
+                              setEstado(true);
+                            }
+                            console.log(estado);
+                            return eliminarCliente(cliente.id);
+                          }
+                          } 
                         >Eliminar
                         </Button>
                     </div>

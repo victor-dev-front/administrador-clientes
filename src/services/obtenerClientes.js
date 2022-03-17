@@ -7,6 +7,7 @@ export const obtenerClientes = async (setClientes) => {
     try {
       const respuesta =await axios.get(url);
       setClientes(respuesta.data);
+      console.log(respuesta.data);
  
     } catch (error) {
         console.log(error);

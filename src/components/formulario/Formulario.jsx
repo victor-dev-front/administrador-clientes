@@ -2,8 +2,12 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { postApi } from "../../services/enviarDatosCliente";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
+import { useContext } from "react";
+import { DatasApiContext } from "../../context/DatasApiContext";
 
 const Formulario = ({cliente}) => {
+
+  const {setEstado,estado} = useContext(DatasApiContext);
 
   const navigate = useNavigate();
 
@@ -28,7 +32,7 @@ const Formulario = ({cliente}) => {
 
     return ( 
         <div className="contenedor__titleForm">
-          <h3 className="titleForm">Agregar Cliente</h3>
+          <h3 className="titleForm">{cliente.id ? "Modificar Cliente" : "Agregar Cliente"}</h3>
           <Formik
 
             //valores iniciales de mi obejto
@@ -49,6 +53,12 @@ const Formulario = ({cliente}) => {
             //envio el formulario
             onSubmit={(values,{resetForm})=>{
               postApi(values,cliente);
+              if(estado == true){
+                setEstado(false)
+              }else{
+                setEstado(true);
+              }
+              console.log(estado);
               resetForm();
               navigate("/clientes");
             }}
@@ -108,7 +118,7 @@ const Formulario = ({cliente}) => {
                         type="submit"
                         className="btnForm"
                       >
-                        Enviar
+                       {cliente.id ? "Guardar" : " Enviar"}
                       </button>
                   </div>
               </Form>
